@@ -7,15 +7,15 @@
     "link": "https://github.com/hernestiana/projeto01rocketseat"
   },
   {
-    "titulo": "Conversor de Moedas",
-    "descricao": "Consulta taxas de câmbio via API e converte moedas.",
+    "titulo": "Portfólio Pessoal",
+    "descricao": "Portfólio pessoal desenvolvido para mostrar habilidades e projetos.",
     "tecnologias": ["HTML", "JavaScript", "API"],
-    "link": "https://github.com/seuusuario/conversor-moedas"
+    "link": "https://github.com/hernestiana/portifolio"
   },
   {
-    "titulo": "Lista de Tarefas",
-    "descricao": "Aplicação simples de lista de tarefas com armazenamento local.",
-    "tecnologias": ["HTML", "CSS", "JavaScript"],
-    "link": "https://github.com/seuusuario/todo-list"
+    "titulo": "Maquina de Turing",
+    "descricao": "Projeto de estudo sobre a Máquina de Turing, uma máquina teórica que manipula símbolos em uma fita de acordo com um conjunto de regras.",
+    "tecnologias": ["Python", "Machine Learning"],
+    "link": "https://github.com/hernestiana/maquina-turning"
   }
 ]
