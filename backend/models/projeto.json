@@ -1,0 +1,21 @@
+
+[
+  {
+    "titulo": "projeto01rocketseat",
+    "descricao": "Projeto de estudo da Rocketseat",
+    "tecnologias": ["HTML", "CSS"],
+    "link": "https://github.com/hernestiana/projeto01rocketseat"
+  },
+  {
+    "titulo": "Conversor de Moedas",
+    "descricao": "Consulta taxas de câmbio via API e converte moedas.",
+    "tecnologias": ["HTML", "JavaScript", "API"],
+    "link": "https://github.com/seuusuario/conversor-moedas"
+  },
+  {
+    "titulo": "Lista de Tarefas",
+    "descricao": "Aplicação simples de lista de tarefas com armazenamento local.",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/seuusuario/todo-list"
+  }
+]

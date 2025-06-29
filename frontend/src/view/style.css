@@ -1,0 +1,457 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body{
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface{
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.btn-contato button{
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 30px;
+  background-color: #D62828;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4;
+}
+
+h2.titulo{
+  color: #D62828;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2.titulo span{
+  color: #D62828;
+}
+button:hover{
+  box-shadow: 0px 0px 8px #f10505;
+  transform: scale(1.05);
+}
+
+/* estilo do cabeçalho */
+header{
+  padding: 40px 4%;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a{
+  color: #7d7d7d;
+  text-decoration: none;
+  display: inline-block;
+}
+/*EFEITO DO CABEÇALHO */
+header a:hover{
+  color: #afa7a7;
+  transform: scale(1.07);
+  transition: .4s;
+}
+
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 40px;
+}
+
+
+
+/* parte de cima do portifolio */
+section .parte-de-cima{
+  padding: 40px 4%;
+}
+
+section .parte-de-cima .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.parte-de-cima h1{
+  color: #D62828;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.parte-de-cima .txt-site h1 span{
+  color: #D62828;
+}
+
+.parte-de-cima .txt-site p{
+  color: #D62828;
+ 
+  margin: 40px 0;
+}
+
+.parte-de-cima .img-topo-site img{
+  position: relative;
+  animation: anime 4s ease-in-out infinite alternate;
+}
+
+
+
+/* estilo das experiências */
+section.Experiências{
+  padding: 40px 4%;
+}
+
+section.Experiências .flex{
+  gap: 60px;
+}
+
+.Experiências .Experiências-box{
+  color: #D62828;
+  padding: 40px;
+  color: #D62828;
+  margin-top: 45px;
+  border-radius: 25px;
+}
+
+.Experiências .Experiências-box i {
+  font-size: 90px;
+  color: #D62828;
+}
+
+.Experiências .Experiências-box p{
+  font-size: 18px;
+  margin: 15px 0;
+}
+/*/ estilo sobre/*/
+section.sobre{
+padding: 80px 4%;
+}
+
+section .sobre .flex{
+align-items: center;
+gap: 60px;
+
+
+}
+.sobre .txt-sobre{
+  color: #D62828;
+  
+  
+}
+
+.sobre .txt-sobre h2{
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+
+}
+
+.sobre .txt-sobre h2 span{
+  color: #D62828;
+  display: block;
+}
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: center;
+}
+.sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  background-color: #D62828;
+  cursor: pointer;
+  margin:  0 8px;
+  transition: .4s;
+
+}
+/*/ ESTILO DO CERTIFICADO/*/
+section.certificado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:80px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.certificado .flex{
+  gap: 55px;
+  
+}
+
+
+.img-port{
+  width: 400px;
+  height: 320px;
+ background-size: cover;
+ background-position: 100% 0%;
+ border-radius: 40px;
+ box-shadow: 0 0 40px 10px #ffffff1d;
+ 
+}
+
+/* Estilos para  contato */
+.contato {
+  padding: 60px 4%;
+  background-color: #f5f5f5; 
+}
+
+.contato .interface {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contato .titulo {
+  font-size: 2.5em;
+  color: #1c1c1c;
+  margin-bottom: 30px;
+}
+
+.contato p {
+  font-size: 1.2em;
+  color: #1c1c1c;
+  margin: 10px 0;
+}
+
+/* animação de entrada do formulario*/
+.contato {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*resposividade*/
+
+@media (max-width: 1024px) {
+  .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .parte-de-cima .flex, 
+  .sobre .flex, 
+  .Experiências .flex, 
+  .certificado .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul li {
+    padding: 0 20px;
+  }
+
+  .img-port {
+    width: 90%;
+    height: 250px;
+  }
+}
+/*resposividade/*/
+
+@media (max-width: 768px) {
+  header > .interface {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .btn-contato button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .menu-desktop ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .img-topo-site img, 
+  .img-sobre img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .Experiências .Experiências-box {
+    padding: 30px;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+footer {
+  background-color: #000;
+  color: #D62828;
+  padding: 20px 4%;
+  text-align: center;
+}
+
+footer .footer-content {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  font-size: 20px;
+  color: #D62828;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+
+footer .social-links a:hover {
+  color: #D62828;
+}
+
+
+/* Estilo para o formulário de contato */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+}
+
+.form-contato button {
+  padding: 12px;
+  background-color: #D62828;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-contato button:hover {
+  background-color: #b32121;
+  box-shadow: 0 0 8px #f10505;
+}
+
+/*BOTÃO MODO ESCURO/*/
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+}
+
+body.tema-escuro {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+
+button {
+  cursor: pointer;
+}
+
+/* Estilo botão de troca de tema */
+#toggle-tema {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: 1px solid currentColor;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+/* Quando o tema escuro estiver ativado */
+body.tema-escuro #toggle-tema {
+  color: #ffffff; /* Cor do texto no modo escuro */
+  border-color: #ffffff;
+}
+
+/* CSS para projetos - seguindo o padrão de cores */
+.card-projeto {
+  background: #1a1a1a;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(214,40,40,0.10);
+  padding: 28px;
+  margin: 24px 0;
+  border: 2px solid #D62828;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-projeto:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(214,40,40,0.18);
+  border-color: #fff;
+}
+.card-projeto h3 {
+  margin-top: 0;
+  color: #D62828;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.card-projeto p {
+  margin: 8px 0;
+  color: #f0f0f0;
+}
+.card-projeto strong {
+  color: #D62828;
+}
+.btn-projeto {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  background: #D62828;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s;
+  border: none;
+}
+.btn-projeto:hover {
+  background: #fff;
+  color: #D62828;
+  border: 1px solid #D62828;
+}

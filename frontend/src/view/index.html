@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--google fonte inicio-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!--google fonte fim-->
+      <!--icons bootstrap-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <!--icons bootstrap fim-->
+      <link rel="stylesheet" href="style.css">
+      <title>Hernestiana portifolio</title>
+   </head>
+   <body>
+      <header>
+         <body class="tema-escuro">
+   </body>
+   <button id="toggle-tema">🌙 Modo Escuro</button>
+   <div class="interface">
+   <div class="logo">
+   <a href="#">
+   <img src="../assets/images/imgbug.png" alt="Imagem de Bug" width="80">
+   </a>
+   </div><!--logo-->
+   <!--ids boões-->
+   <nav class="menu-desktop">
+   <ul>
+   <li><a href="#" id="botao-topo">Inicio</a></li>
+   <li><a href="#" id="botao-experiencias">Experiência</a></li>
+   <li><a href="#" id="botao-sobre">Sobre</a></li>
+   <li><a href="#" id="botao-projetos">Projetos</a></li>
+   </ul>
+   </nav>
+   <div class="btn-contato">
+   <a href="#contato">
+   <button>Contato</button>
+   </a>
+   </div><!--botão-->
+   </div><!--fecha interface-->
+   </header>
+   <main>
+      <section id="topo" class="parte-de-cima">
+         <div class="interface">
+            <div class="flex">
+               <div class="txt-site">
+                  <h1>ANALISTA DA QUALIDADE DE SOFTWARE<SPAN>.</SPAN></h1>
+                  <P>Cada teste executado é uma falha prevenida. Meu compromisso é garantir que seu software entregue performance, qualidade e confiança em cada detalhe.</P>
+               </div>
+               <!--txt site-->
+               <div class="img-topo-site">
+                  <img src="../assets/images/minha foto.png" alt="minha foto" width="300">
+               </div>
+            </div>
+            <!--flex-->
+         </div>
+         <!--interface-->
+      </section>
+      <!--parte de cima-->
+      <section id="experiencias" class="Experiências">
+         <h2 class="titulo">MINHAS <SPAN>EXPERIÊNCIAS:</SPAN></h2>
+         <div class="flex">
+            <div class="Experiências-box">
+               <i class="bi bi-bug"></i>
+               <h3>Report de bugs</h3>
+               <p> Localizo inconsistências visuais, funcionais e de usabilidade que poderiam impactar a experiência do usuário final. Busco não apenas encontrar falhas, mas também sugerir melhorias para aumentar a estabilidade e qualidade geral dos produtos.</p>
+            </div>
+            <!--Experiências-box 1-->
+            <div class="Experiências-box">
+               <i class="bi bi-file-earmark-text"></i>
+               <h3>Domentação de cenários</h3>
+               <p> Organizo cenários utilizando técnicas como Gherkin (Given/When/Then) e planos estruturados para facilitar testes manuais ou automatizados.</p>
+            </div>
+            <!--Experiências-box 2-->
+            <div class="Experiências-box">
+               <i class="bi bi-code-slash"></i>
+               <h3>Testes de software</h3>
+               <p> Há mais de 1 ano realizo testes de software manuais, testes de regressão, testes funcionais, testes de usabilidade, testes e2e</p>
+            </div>
+            <!--Experiências-box 3-->
+         </div>
+         <!--flex-->
+         </div><!--interface-->
+      </section>
+      <!--experiências-->
+      <section id="sobre" class="sobre">
+         <div class="interface">
+            <div class="flex">
+               <div class="img-sobre">
+                  <img src="../assets/images/minha foto.png" alt="minha foto">
+               </div>
+               <!--img-sobre-->
+               <div class="txt-sobre">
+                  <h2>Olá, <span>sou Hernestiana Araújo</span> </h2>
+                  <p>
+                     Sou uma profissional apaixonada por garantir a qualidade e o desempenho de softwares. Com uma sólida experiência em testes de software, dedico-me a identificar, 
+                     documentar e corrigir falhas em sistemas para proporcionar aos usuários uma experiência livre de erros e de alta qualidade
+                  </p>
+                  <p>Sou alguém que busca constantemente aprender novas técnicas e ferramentas para aprimorar meus testes e garantir que os produtos finais atendam às expectativas dos usuários. Acredito no trabalho 
+                     colaborativo e na comunicação eficaz entre as equipes de desenvolvimento e de QA para alcançar os melhores resultados.
+                  </p>
+                  <div class="btn-social">
+                     <a href="https://www.linkedin.com/in/hernestiana-ara%C3%BAjo-9a5b68216/" target="_blank">
+                     <button><i class="bi bi-linkedin"></i></button></a>
+                     <a href="https://www.instagram.com/hernstiana/" target="_blank">
+                     <button><i class="bi bi-instagram"></i></button></a>
+                  </div>
+                  <!--btn social-->
+               </div>
+               <!--txt sobre-->
+            </div>
+            <!--flex-->
+         </div>
+         <!--interface-->
+      </section>
+      <!--sobre-->
+      <section id="projetos" class="projetos">
+        <!--Alteração projeto 3-->
+        <div class="interface">
+            <h2 class="titulo">MEUS <span>PROJETOS:</span></h2>
+            <div id="projetos"></div>
+        </div>
+      </section>
+      <!--certificados-->
+      <!--FORMULARIO DE CONTATO-->
+      <section id="contato" class="contato">
+         <div class="interface">
+            <h2 class="titulo">Entre em <span>Contato:</span></h2>
+            <form class="form-contato" id="formContato">
+               <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+               <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+               <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+               <button type="submit">Enviar</button>
+            </form>
+            <!-- Mensagem de sucesso -->
+            <p id="mensagem-sucesso" style="display: none; margin-top: 20px; color: green; font-weight: bold;">
+               Mensagem enviada com sucesso!
+            </p>
+            <!-- Mensagem de erro -->
+            <p id="mensagem-erro" style="display: none; margin-top: 10px; color: red; font-weight: bold;">
+               Por favor, preencha todos os campos.
+            </p>
+         </div>
+      </section>
+      <footer>
+         <div class="interface">
+            <div class="footer-content">
+               <p> 2025 Portifolio Hernestiana Araújo.</p>
+               <div class="social-links">
+                  <a href="https://www.linkedin.com/in/hernestiana-ara%C3%BAjo-9a5b68216/" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/hernstiana/" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </main>
+   <script type="module" src="../controller/menuController.js"></script>
+   <script type="module" src="../controller/temaController.js"></script>
+   <script type="module" src="../controller/projetosController.js"></script>
+   </body>
+</html>
